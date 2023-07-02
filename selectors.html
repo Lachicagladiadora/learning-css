@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectors</title>
+</head>
+<body>
+  <h1>LEARNING CSS</h1>
+  <h2>Selectors</h2>
+  
+  <h3>select with tag</h3>
+  <p id="text">select with <strong><q>id</q></strong></p>
+  <pre><code class="code">
+    const function = () => {
+      console.log('select with class')
+    }
+  </code></pre>
+  <p><em attribute>select with attribute</em></p>
+
+
+  <h2>Combiners</h2>
+  <div class="menu" >
+    <div class="options">
+      <ul >
+        <li> <a href="/one">option 1</a></li>
+        <li> <a href="/two">option 2</a></li>
+        <li> <a href="/three">option 3</a></li>
+      </ul>
+    </div>
+  </div>
+
+  
+</body>
+<style>
+  html{
+    background-color: rgb(39, 102, 132);
+  }
+
+  h3{
+    color: #ff7676;
+    background: #2f823a;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+  #text{
+    color: #e3fd3c;
+    background: #993cfd;
+  }
+  .code{
+    color: azure;
+    background: #0000005a;
+  }
+  [attribute]{
+    color: #7681ff;
+    background: #d5ff7b;
+  }
+
+.menu .options ul li a{ /*muy especifica*/
+  color: #ff9d00;
+  background: blue;
+}
+.menu a{ /* general - menos especifica -> la cascada prevalece sobre el mas especifico*/
+  background: #2f823a;
+}
+
+</style>
+</html>

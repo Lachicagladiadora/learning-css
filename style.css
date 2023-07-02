@@ -1,0 +1,17 @@
+:root{
+  /* variables */
+  --color-background: rgb(100, 210, 254);
+
+  margin: 0;
+  padding: 0;
+
+  background-color: var(--color-background);
+}
+h1{
+  font-family: 'Rubik Glitch', cursive;
+  font-weight: lighter;
+  font-size: 100px;
+  color: rgb(1, 98, 208);
+  text-align: center;
+  text-shadow: 30px 0 0 rgb(0, 157, 255) ;
+}
