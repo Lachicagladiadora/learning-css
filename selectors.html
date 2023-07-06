@@ -23,13 +23,37 @@
   <div class="menu" >
     <div class="options">
       <ul >
-        <li> <a href="/one">option 1</a></li>
-        <li> <a href="/two">option 2</a></li>
-        <li> <a href="/three">option 3</a></li>
+        <li> <a target="_blank" href="/one">option 1</a></li>
+        <li> <a target="_blank" href="/two">option 2</a></li>
+        <li> <a target="_blank" href="/three">option 3</a></li>
       </ul>
     </div>
   </div>
+  <div>
+    <h2>son & brother</h2>
+    <div class="father">
+      father
+      <div class="children 1">
+        children1
+        <em class="brother">brother</em>
+        <strong class="sister">sister</strong>
+        <span class="grandson">grandson</span>
+        <span class="grandson">grandson</span>
+      </div>
+      <div class="children 2">
+        children 2
+        <em class="brother">brother</em>
+        <strong class="sister">sister</strong>
+        <span class="grandson">grandson</span>
+        <span class="grandson">grandson</span>
+      </div>
+      <em class="brother">brother</em>
+        <strong class="sister">sister</strong>
+        <strong class="sister">sister</strong>
+    </div>
 
+    
+  </div>
   
 </body>
 <style>
@@ -63,6 +87,20 @@
 .menu a{ /* general - menos especifica -> la cascada prevalece sobre el mas especifico*/
   background: #2f823a;
 }
-
+.father > .children{
+  background-color: rgb(110, 197, 102);
+}
+/* .brother{
+  color: rgba(226, 0, 0, 0.5);
+} */
+.brother + .sister{
+  color: #ff00aa;
+}
+.brother ~ .sister{
+  background: #c67bff;
+}
+.father *{
+  border: solid 1px purple;
+}
 </style>
 </html>
