@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEARNING CSS: State pseudo-classes</title>
+</head>
+<body>
+  
+  <div class="screen" open>
+<video src="./img/sea.mp4" controls autoplay height="1030px"></video>
+    <button class="close">Close</button>
+  </div>
+  
+  <button class="open">FullScreen</button>
+  
+</body>
+  <script>
+  const button = document.querySelector(".open");
+  const close = document.querySelector(".close");
+  const screen = document.querySelector(".screen");
+  
+  button.addEventListener("click", () => screen.requestFullscreen());
+  close.addEventListener("click", () => document.exitFullscreen());
+  </script>
+  
+  <style>
+/* State pseudo-classes -> state of manners or similar*/
+  html{
+    font-size: 50px;
+    background: #71a6bd;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .screen {
+    display: none;
+  }
+  
+  :fullscreen {
+    display: block;
+    background: rgb(0, 0, 0);
+    border: 8px solid rgb(21, 142, 155);
+    /* place-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  </style>
+</html>
