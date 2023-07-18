@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Selectors</title>
+  <title>LEARNING CSS: Selectors</title>
 </head>
+
 <body>
   <h1>LEARNING CSS</h1>
   <h2>Selectors</h2>
-  
-  <h3>select with tag</h3>
+
+  <p class="target" id="target">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut repellat numquam quos sunt
+    aliquam labore assumenda quia, deserunt eos velit, quaerat pariatur natus beatae id obcaecati nemo. Quas, officia
+    obcaecati.</p>
+
+  <h4>select with tag</h4>
   <p id="text">select with <strong><q>id</q></strong></p>
   <pre><code class="code">
     const function = () => {
@@ -19,19 +25,19 @@
   <p><em attribute>select with attribute</em></p>
 
 
-  <h2>Combiners</h2> 
-  <div class="menu" >
+  <h2>Combiners</h2>
+  <div class="menu">
     <div class="options">
-      <ul >
+      <ul>
         <li class="item"> <a target="_blank" href="/one" class="one">option 1</a></li>
         <li class="item"> <a target="_blank" href="/two" class="two">option 2</a></li>
         <li> <a target="_blank" href="/three" class="three">option 3</a></li>
       </ul>
     </div>
   </div>
-  
+
   <div>
-    <h2>son & brother</h2>
+    <h3>son & brother</h3>
     <div class="father">
       father
       <div class="children 1">
@@ -49,80 +55,333 @@
         <span class="grandson">grandson</span>
       </div>
       <em class="brother">brother</em>
-        <strong class="sister">sister</strong>
-        <li><strong class="sister">sister</strong></li>
+      <strong class="sister">sister</strong>
+      <li><strong class="sister">sister</strong></li>
     </div>
   </div>
 
   <h2>Logic combiners</h2>
   <div class="contain">
-    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat totam, exercitationem aperiam consequuntur eum eos. Expedita, sapiente? Esse excepturi magni expedita nesciunt quod, nemo facilis aperiam soluta quos a odit!</p>
     <ul class="list">
       <li> <a target="_blank" href="/one" class="one">option 1</a></li>
       <li> <a target="_blank" href="/two" class="two">option 2</a></li>
-      <li  class="item"> <a target="_blank" href="/three" class="three">option 3</a></li>
+      <li class="item"> <a target="_blank" href="/three" class="three">option 3</a></li>
     </ul>
   </div>
-  
+
+  <h2>Pseudo-Classes</h2>
+  <h3>Interaction pseudo-classes</h3>
+  <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio necessitatibus qui? Illum
+    quisquam, quaerat, odit a sint in distinctio veniam, vero voluptatibus nemo debitis tempore. Consequatur corporis
+    quasi animi.</p>
+  <input class="first-input" type="text" placeholder="focus dotted">
+  <textarea class="second-input" name="textarea" id="" cols="30" rows="10" placeholder="focus dashed"></textarea>
+  <input class="third-input" type="text" placeholder="focus-visible double">
+  <input class="fourth-input" type="text" placeholder="focus groove">
+  <input class="fifth-input" type="text" placeholder="focus-visible hidden">
+  <a class="sixth-input" href="#" rel="noopener noreferrer" target="_self">focus outset</a>
+  <form class="form">
+    <label class="label">
+      focus-within 1:
+      <input type="text" placeholder="focus-within">
+    </label>
+    <label class="label">
+      focus-within 2:
+      <input type="text" placeholder="focus-within">
+    </label>
+  </form>
+  <h3>Location pseudo-classes</h3>
+  <a target="_blank" href="/one" class="any-link">any-link</a>
+  <a target="_blank" href="/one" class="link">link</a>
+  <a target="_blank" href="https://www.google.com" class="visited">visited</a>
+  <a target="_blank" href="#" class="target" id="target">target</a>
+  <h3>Language pseudo-classes</h3>
+  <div class="es" lang="es">
+    <h5>Español</h5>
+    <section>
+      <p>«El término español resulta más recomendable por carecer de ambigüedad, ya que se refiere de modo unívoco a la
+        lengua que hablan hoy cerca de cuatrocientos millones de personas. Asimismo, es la denominación que se utiliza
+        internacionalmente (Spanish, espagnol, Spanisch, spagnolo, etc.)»</p>
+    </section>
+  </div>
+  <div class="pt" lang="pt">
+    <h5>Português</h5>
+    <section>
+      <p>Toda a pessoa tem direito à educação. A educação deve ser gratuita, pelo menos a correspondente ao ensino
+        elementar fundamental. O ensino elementar é obrigatório. O ensino técnico e profissional dever ser generalizado;
+        o acesso aos estudos superiores deve estar aberto a todos em plena igualdade, em função do seu mérito.</p>
+    </section>
+  </div>
+  <h3>State pseudo-classes</h3>
+  <a href="./stateExamplePseudoClass.html" target="_blank">state example</a>
+
+  <h3>Structure pseudo-classes</h3>
+  <ul>
+    <li>root: font: first-child</li>
+    <li>root: background: last-child</li>
+  </ul>
+  <div class="cont">
+    <div class="element">first-of-type</div>
+    <div class="element">first-of-type</div>
+    <p class="element">first-of-type</p>
+    <div class="element">first-of-type</div>
+  </div>
+  <h3>Form pseudo-classes</h3>
+  <h3>Pagination pseudo-classes</h3>
+
+
+
 </body>
 <style>
-  html{
-    background-color: rgb(39, 102, 132);
+  html {
+    padding: 0;
+    margin: 0;
   }
-/* selectors */
-  h3{
+
+  /* selectors */
+  h4 {
     color: #ff7676;
     background: #2f823a;
     font-weight: lighter;
     font-size: 16px;
   }
-  #text{
+
+  #text {
     color: #e3fd3c;
     background: #993cfd;
   }
-  .code{
+
+  .code {
     color: azure;
     background: #0000005a;
   }
-  [attribute]{
+
+  [attribute] {
     color: #000757;
     background: #b06ca2;
   }
-/* combiners */
-.menu .options ul li a{ /*muy especifica*/
-  color: #ff9d00;
-  background: blue;
-}
-.code, .brother{
-  color: rgb(238, 255, 0);
-} 
-.menu a{ /* general - menos especifica -> la cascada prevalece sobre el mas especifico*/
-  background: #06330c;
-}
-.father > .children{
-  background-color: rgb(0, 136, 45);
-}
-.brother + .sister{
-  color: #ff00aa;
-}
-.brother ~ .sister{
-  background: #714e92;
-}
-.father *{
-  border: solid 2px rgb(25, 22, 127);
-}
-/* logic combiners === functional pseudo-class */
-.contain :is(.one,.three){
-  border: solid 1px rgb(242, 255, 0);
-}
-.contain :where(.one,.three){
-  background-color: #ff00aa;
-}
-ul :has(> .two){
-  border: solid 2px #4d0057;
-}
-li:not(.item){
-  text-shadow:3px 0px 0 #00b4fb;
-}
+
+  /* combiners */
+  .menu .options ul li a {
+    /*muy especifica*/
+    color: #ff9d00;
+    background: blue;
+  }
+
+  .code,
+  .brother {
+    color: rgb(238, 255, 0);
+  }
+
+  .menu a {
+    /* general - menos especifica -> la cascada prevalece sobre el mas especifico*/
+    background: #06330c;
+  }
+
+  .father>.children {
+    background-color: rgb(0, 136, 45);
+  }
+
+  .brother+.sister {
+    color: #ff00aa;
+  }
+
+  .brother~.sister {
+    background: #714e92;
+  }
+
+  .father * {
+    border: solid 2px rgb(25, 22, 127);
+  }
+
+  /* logic combiners === functional pseudo-class */
+  .contain :is(.one, .three) {
+    border: solid 1px rgb(242, 255, 0);
+  }
+
+  .contain :where(.one, .three) {
+    background-color: #ff00aa;
+  }
+
+  ul :has(> .two) {
+    border: solid 2px #4d0057;
+  }
+
+  li:not(.item) {
+    text-shadow: 3px 0px 0 #ffffff;
+  }
+
+  /* Interaction pseudo-classes -> user actions*/
+  .paragraph:hover {
+    /*Mouse over that element.*/
+    color: rgb(255, 140, 0);
+    font-size: 20px;
+    background-color: #202961;
+  }
+
+  .paragraph:active {
+    /*Is found by clicking on that item*/
+    background-color: #4d0057;
+    color: #ffd96f;
+  }
+
+  .first-input:focus {
+    border: tomato 4px dotted;
+    background-color: #e3fd3c;
+  }
+
+  .second-input:focus {
+    border: tomato 4px dashed;
+    background-color: #e3fd3c;
+  }
+
+  .third-input:focus-visible {
+    border: tomato 8px double;
+    background-color: #e3fd3c;
+  }
+
+  .fourth-input:focus {
+    border: tomato 4px groove;
+    background-color: #e3fd3c;
+  }
+
+  .fifth-input:focus-visible {
+    border: tomato 4px hidden;
+    background-color: #e3fd3c;
+  }
+
+  .sixth-input:focus {
+    border: tomato 4px outset;
+    background-color: #e3fd3c;
+  }
+
+  .form :focus-within {
+    background: rgb(248, 105, 65);
+  }
+
+  .label :focus-within {
+    border: solid 4px rgb(241, 225, 105);
+  }
+
+  /* Location pseudo-classes -> links or locations or hyperlinks*/
+  :any-link {
+    /* background: indigo; */
+    color: rgb(24, 78, 52);
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .link:link {
+    font-weight: lighter;
+    color: aqua;
+    background: #ff7676;
+  }
+
+  .visited:visited {
+    color: #783d3d;
+  }
+
+  .target :target {
+    background: red;
+    color: #333;
+    padding: 5px;
+  }
+
+  /* Language pseudo-classes*/
+  :lang(es) {
+    color: #fdd33c;
+    background: #784343;
+  }
+
+  :lang(pt) {
+    color: rgb(12, 187, 0);
+    background: #f5f183;
+  }
+
+  :dir(rtl) {
+    color: #ff00aa;
+  }
+
+  /* Structure pseudo-classes */
+  :root {
+    background-color: rgb(104, 159, 184);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  :host() {
+    border: solid 4px #ff7676;
+  }
+
+  :first-child {
+    border: solid 2px rgb(2, 100, 74);
+  }
+
+  :last-child {
+    border: solid 1px rgb(130, 34, 34);
+  }
+
+  :nth-child(6) {
+    color: rgb(254, 197, 183);
+    font-size: 20px;
+    font-family: monospace;
+    /* text-shadow: 2px 0px 0 0 #000000; */
+    background-color: #cdf5f1;
+  }
+
+  :nth-last-child(6) {
+    font-size: 20px;
+    color: #ffcff4;
+    font-family: monospace;
+    /* text-shadow: 2px 0px 0 0 #680000; */
+    background-color: #6c6c6c;
+  }
+
+  ul :nth-child(2) {
+    border: solid 12px rgba(185, 86, 29, 0.585);
+  }
+
+  .cont div:first-of-type {
+    border: rgb(187, 71, 255) solid 3px;
+    color: #bdbdbe;
+  }
+
+  .cont p:first-of-type {
+    border: rgb(62, 255, 139) solid 3px;
+    color: #5f9469;
+    /* background: #d2a400; */
+  }
+
+  .cont :first-of-type {
+    border: rgb(255, 15, 159) solid 3px;
+    color: #f69f9f;
+    background: #160023;
+  }
+
+  .cont :only-child {
+    color: rgb(0, 120, 78);
+  }
+  
+
+  /* Form pseudo-classes */
+
+  /* Pagination pseudo-classes */
+  :first {
+    border: solid 4px rgb(255, 115, 86);
+  }
+
+  :left {
+    border: solid 4px orange;
+    margin: 30px;
+  }
+
+  :right {
+    border: solid 4px rgb(135, 111, 178);
+    margin: 30px;
+  }
+
+  :blank {
+    border: solid 6px orangered;
+  }
 </style>
+
 </html>
