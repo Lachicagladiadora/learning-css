@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEARNING CSS: Box Model</title>
+  <link rel="shortcut icon" href="./img/logoCSS.png" type="image/x-icon" >
+
+</head>
+<body>
+  <h1>LEARNING CSS: Box Model</h1>
+  <!-- <h2>Box Model</h2> -->
+  <div class="block-definition">
+  <h3>Block</h3>
+  <dfn><ul>
+      <li>Line break</li>
+      <li>The width and height properties are respected.</li>
+      <li>Available padding and margin of your container</li>
+      <li>If width <strong>(width: 100%)</strong> is not specified, the box will extend in the inline direction to fill the space available in its container.</li>
+  </ul></dfn>
+  <p>div, p, h1, h2, h3, h4, h5, h6</p>
+  <h4>Visibility</h4>
+  <div class="block-default">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    <div class="block">div</div>
+    Placeat ullam velit quisquam fugit incidunt nulla deserunt nam quidem? 
+    <p class="block">paragraph</p>
+    Error doloribus amet velit placeat culpa a tenetur tempora 
+    <h6 class="block">h6</h6>
+    accusantium minima ab.
+  </div>
+  <h5>display:inline</h5>
+  <div class="block-display-inline">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    <div class="block-inline">div</div>
+    Placeat ullam velit quisquam fugit incidunt nulla deserunt nam quidem? 
+    <p class="block-inline">paragraph</p>
+    Error doloribus amet velit placeat culpa a tenetur tempora 
+    <h6 class="block-inline">h6</h6>
+    accusantium minima ab.
+  </div>
+  <h5>display:flex, direction:row</h5>
+  <div class="block-display-flex">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+    <div class="block-flex">div</div>
+    Placeat ullam velit quisquam fugit incidunt nulla deserunt nam quidem? 
+    <p class="block-flex">paragraph</p>
+    Error doloribus amet velit placeat culpa a tenetur tempora 
+    <h6 class="block-flex">h6</h6>
+    accusantium minima ab.
+  </div>
+  </div>
+
+  <div class="inline-definition">
+    <h3>Inline</h3>
+    <dfn><ul>
+      <li>There is NO line break</li>
+      <li>The width and height properties will not apply.</li>
+    </ul></dfn>
+    <span>span, em, strong, a</span>
+  <h4>Visibility</h4>
+    <div class="inline-default">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <span class="inline">span</span>
+      Ad, quo minima, laudantium eos libero sed qui ipsum 
+      <em class="inline">emphasis</em>
+      doloremque accusamus, minus et cum! 
+      <strong class="inline">strong</strong>
+      Iure commodi doloribus neque ipsa, quae eaque ratione?
+    </div>
+  <h5>display:block</h5>
+    <div class="inline-display-block">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <span class="inline-block">span</span>
+      Ad, quo minima, laudantium eos libero sed qui ipsum 
+      <em class="inline-block">emphasis</em>
+      doloremque accusamus, minus et cum! 
+      <strong class="inline-block">strong</strong>
+      Iure commodi doloribus neque ipsa, quae eaque ratione?
+    </div>
+    <h5>display:flex, direction:row</h5>
+    <div class="inline-display-flex">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      <span class="inline-flex">span</span>
+      Ad, quo minima, laudantium eos libero sed qui ipsum 
+      <em class="inline-flex">emphasis</em>
+      doloremque accusamus, minus et cum! 
+      <strong class="inline-flex">strong</strong>
+      Iure commodi doloribus neque ipsa, quae eaque ratione?
+    </div>
+  </div>
+
+  <h2>Box Model</h2>
+  <h3>Margin & Padding</h3>
+  <img src="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="">
+  <div class="definition">
+    <h4>Margin</h4>
+    <dfn> It pushes other elements away from the box</dfn>
+    <strong>Margin collapsing</strong>
+    <dfn><ul>
+      <li>Two positive margins will combine to become one margin. Its size will be equal to the largest individual margin.</li>
+      <li>Two negative margins will collapse and the smallest (furthest from zero) value will be used.</li>
+      <li>If one margin is negative, its value will be subtracted from the total.</li>
+    </ul></dfn>
+  </div>
+  <p><span class="margin"><em class="padding">margin & padding inline</em></span></p>
+  <p><span class="margin"><em class="padding">margin & padding inline</em></span></p>
+  
+  <h3>Border</h3>
+  <div class="border-contain">
+    <p class="border-block">block</p>
+    <span class="span-inline-border">inline 1</span>
+    <em class="em-inline-border">inline 2</em>
+  </div>
+  
+  <h3>width & height</h3>
+  <img src="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model/standard-box-model.png" alt="">
+  <span>
+    <h3>box-sizing: border-box</h3>
+    <img src="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/The_box_model/alternate-box-model.png" alt="">
+  </span>
+
+  <h3>display: inline-block</h3>
+  <div class="display-inline-block-contain">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, corporis? Nostrum, ad? Repellat voluptas minima soluta iste modi non, delectus consequuntur distinctio quaerat?
+    <dfn><ul class="box-content">
+      <li>The width and height properties are respected.</li>
+      <li>padding, margin, and border will cause other elements to be pushed away from the box.</li>
+    </ul></dfn>
+    Ipsam totam fugiat facere voluptas, nisi reiciendis!
+  </div>
+  <nav class="nav-contain">
+    <ul class="list">
+      <li class="link-item">inline-block-one<a href="#" class="link">one</a></li>
+      <li class="link-item">inline-block-two<a href="#" class="link">two</a></li>
+      <li class="link-item">inline-block-three<a href="#" class="link">three</a></li>
+      <li class="link-item">inline-block-four<a href="#" class="link">four</a></li>
+      <li class="link-item">inline-block-five<a href="#" class="link">five</a></li>
+      <li class="link-item">inline-block-six<a href="#" class="link">six</a></li>
+    </ul>
+  </nav>
+
+</body>
+<style>
+  :root{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(157, 224, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .block-definition{
+    border: solid 2px rgb(19, 65, 139);
+  }
+  .block-default{
+    border: solid 3px salmon;
+  }
+  .block{
+    border: solid 3px olivedrab;
+  }
+  .block-display-inline{
+    border: solid 3px sandybrown;
+  }
+  .block-inline{
+    border: solid 3px olive;
+    display: inline;
+  }
+  .block-display-flex{
+    border: solid 3px rgb(222, 109, 96);
+    display: flex;
+  }
+  .block-flex{
+    border: solid 3px rgb(149, 177, 23);
+  }
+  
+  .inline-definition{
+    border: solid 2px rgb(115, 90, 205);
+  }
+  .inline-default{
+    border: solid 3px goldenrod;
+  }
+  .inline{
+    border: solid 3px greenyellow;
+  }
+  .inline-display-block{
+    border: solid 3px gold;
+  }
+  .inline-block{
+    border: solid 3px green;
+    display: block;
+  }
+  .inline-display-flex{
+    border: solid 3px yellow;
+    display: flex;
+    flex-direction: column;
+  }
+  .inline-flex{
+    border: solid 3px yellowgreen;
+  }
+
+  .margin{
+    border: solid 3px pink;
+    margin: 10px 20px 30px 40px;
+  }
+  .padding{
+    border: solid 3px plum;
+    margin: 10px 20px 30px 40px;
+    padding: 50px;
+  }
+
+  .border-contain{
+    padding: 15px;
+    border-style: solid;
+    border-width: 15px;
+    border-color: violet;
+    border-top-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style: double;
+    border-left-style: groove;
+  }
+  .border-block{
+    border: solid 10px purple;
+    padding: 20px;
+    margin: 10px;
+    border-top-style: hidden;
+    border-right-style: inherit;
+    border-bottom-style: initial;
+    border-left-style: inset;
+  }
+  .span-inline-border{
+    border: solid 10px mediumpurple;
+    padding: 10px;
+    margin: 10px;
+    border-top-style: none;
+    border-right-style: outset;
+    border-bottom-style: ridge;
+    border-left-style: unset;
+  }
+  .em-inline-border{
+    border: solid 10px mediumslateblue;
+    padding: 10px;
+    margin: 10px
+  }
+
+  .display-inline-block-contain{
+    border: solid 4px rgb(255, 76, 255);
+  }
+  .box-content{
+    border: solid 3px rgb(203, 62, 117);
+    padding: 5px;
+    display: inline-block;
+  }
+
+  .nav-contain{
+    border: solid 3px blue;
+  }
+  .list{
+    border: solid 3px rgb(0, 143, 134);
+  }
+  .link-item{
+    border: solid 3px chocolate;
+    display: inline-block;
+  }
+  .link{
+    border: solid 4px darkkhaki;
+  }
+
+</style>
+</html>
