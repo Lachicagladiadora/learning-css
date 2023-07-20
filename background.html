@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/logoCSS.png" type="image/x-icon">
+  <title>LEARNING CSS: Background & Gradient </title>
+</head>
+
+<body>
+  <h1>LEARNING CSS: Background & Gradient</h1>
+  <h2>Background</h2>
+  <div class="background-color">background-color</div>
+  <div class="background-image-contain">background:image, background-size:contain, repeat</div>
+  <div class="background-image-cover">background:image, background-size:cover, no-repeat</div>
+  <div class="background-image-position">background:image, background-size:cover, no-repeat, position</div>
+  <h2>Gradient</h2>
+  <div class="background-gradient">
+    <!-- <p>background-gradient</p> -->
+    <div class="gradient-linear">gradient-linear</div>
+    <div class="gradient-circle">gradient-circle</div>
+  </div>
+  <h2>Compounds</h2>
+  <div class="compounds-content">
+    <div class="multiple-image">multiple-images</div>
+    <div class="gradient-image">gradient-image</div>
+  </div>
+</body>
+<style>
+  :root {
+    margin: 0%;
+    padding: 0%;
+    width: 900px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(183, 232, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  .background-color {
+    height: 150px;
+    background-color: blanchedalmond;
+  }
+
+  .background-image-contain {
+    height: 150px;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS51U5lDuM6xS9HdYTNkV-NceomlxicgEqI3Q3RAMfthmHltiX4PP_GLuNXFNx_RxpHg&usqp=CAU');
+    background-size: contain;
+    background-repeat: repeat;
+    /* background-size: 100px; */
+  }
+
+  .background-image-cover {
+    height: 150px;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: url('https://www.papelpintado.com/media/catalog/product/cache/871f459736130e239a3f5e6472128962/w/0/w05295-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .background-image-position {
+    height: 150px;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: url('https://i.pinimg.com/564x/08/34/b3/0834b34cd2ac8a89145d97bd69e49d8d.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -580px;
+  }
+
+  .background-gradient,
+  .compounds-content {
+    height: 250px;
+    display: flex;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
+  .gradient-linear {
+    border: solid 3px lightcoral;
+    width: 50%;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+    background: linear-gradient(0deg, pink 10%, rgb(182, 255, 182) 30%, rgb(63, 236, 255) 60%, rgb(255, 255, 117) 80%);
+  }
+
+  .gradient-circle {
+    border: solid 3px lightcoral;
+    width: 50%;
+    color: aliceblue;
+    text-shadow: 1px 1px 20px rgb(0, 0, 0);
+    font-weight: bold;
+    background-image: radial-gradient(circle, rgb(228, 129, 174) 6%, rgb(131, 103, 197) 20%, gold 30%, rgb(153, 236, 0) 82%);
+  }
+
+  .multiple-image {
+    border: solid 3px rgb(248, 246, 118);
+    width: 50%;
+    background-image: url('https://pbs.twimg.com/profile_images/577572192973557761/WOtODH-__400x400.png'), url('https://img.freepik.com/vector-premium/escenario-teatro-cortina-roja-asientos-centro-atencion_259139-144.jpg');
+    background-size: contain;
+  }
+
+  .gradient-image {
+    border: solid 3px rgb(248, 246, 118);
+    width: 50%;
+    background: url('https://www.seekpng.com/png/full/62-622520_pokemon-png-image-pokemon-squirtle-png.png') no-repeat, linear-gradient(rgb(3, 8, 80) 20%, rgb(130, 233, 238) 60%) center center/ 90% 80% no-repeat, rgb(0, 0, 48);
+  }
+</style>
+
+</html>
