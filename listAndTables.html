@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://fonts.googleapis.com/css?family=Rock+Salt"
+  rel="stylesheet"
+  type="text/css" />
   <title>LEARNING CSS: Lists and Tables</title>
 </head>
 
@@ -14,47 +18,114 @@
   
   <h3>unordered list</h3>
   <ul class="ul-1">
-    <li class="ul-1-li">list item 1</li>
-    <li class="ul-1-li">list item 2</li>
-    <li class="ul-1-li">list item 3</li>
-    <li class="ul-1-li">list item 4</li>
-    <li class="ul-1-li">list item 5</li>
-    <li class="ul-1-li">list item 6</li>
+    <li class="ul-1-li">list-style-image & position outside 1</li>
+    <li class="ul-1-li">list-style-image & position outside 2</li>
+    <li class="ul-1-li">list-style-image & position outside 3</li>
   </ul>
   <ul class="ul-2">
-    <li class="ul-2-li">list item 1</li>
-    <li class="ul-2-li">list item 2</li>
-    <li class="ul-2-li">list item 3</li>
-    <li class="ul-2-li">list item 4</li>
-    <li class="ul-2-li">list item 5</li>
-    <li class="ul-2-li">list item 6</li>
+    <li class="ul-2-li">list item inside 1</li>
+    <li class="ul-2-li">list item inside 2</li>
+    <li class="ul-2-li">list item inside 3</li>
   </ul>
   <h3>ordered list</h3>
   <ol class="ol-3">
     <li class="ol-3-li">list item 1</li>
     <li class="ol-3-li">list item 2</li>
     <li class="ol-3-li">list item 3</li>
-    <li class="ol-3-li">list item 4</li>
-    <li class="ol-3-li">list item 5</li>
-    <li class="ol-3-li">list item 6</li>
   </ol>
   <ol class="ol-4">
     <li class="ol-4-li">list item 1</li>
     <li class="ol-4-li">list item 2</li>
     <li class="ol-4-li">list item 3</li>
-    <li class="ol-4-li">list item 4</li>
-    <li class="ol-4-li">list item 5</li>
-    <li class="ol-4-li">list item 6</li>
   </ol>
+  <h3>symbols</h3>
+  <ul class="disc">
+    <li>list style disc 1</li>
+    <li>list style disc 2</li>
+    <li>list style disc 3</li>
+  </ul>
+  <ul class="circle">
+    <li>list style circle 1</li>
+    <li>list style circle 2</li>
+    <li>list style circle 3</li>
+  </ul>
+  <ul class="square">
+    <li>list style square1</li>
+    <li>list style square2</li>
+    <li>list style square3</li>
+  </ul>
+  <ul class="disclosure-open">
+    <li>list style disclosure-open 1</li>
+    <li>list style disclosure-open 2</li>
+    <li>list style disclosure-open 3</li>
+  </ul>
+  <ul class="disclosure-closed">
+    <li>list style disclosure-closed 1</li>
+    <li>list style disclosure-closed 2</li>
+    <li>list style disclosure-closed 3</li>
+  </ul>
+  <h3>numeric</h3>
+  <!-- <h3>list-style-type</h3> -->
+  <img src="./img/number-list.png" width="100%" alt="">
+
+  <h3>alphabetic</h3>
+  <img src="./img/alphabetic.png" width="100%" alt="">
+
+  <h3>alphabetic complex</h3>
+  <img src="./img/alphabetic-complex.png" width="100%" alt="">
+
+ 
   
   <h2>Tables</h2>
+  <table summary="title">
+    <caption>
+      <strong>title</strong>
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col">COLUM / ROW</th>
+        <th scope="col">(colum 1)</th>
+        <th scope="col">(colum 2)</th>
+        <th scope="col">(colum 3)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">(row 2)</th>
+        <td>1976</td>
+        <td>9</td>
+        <td>Ever fallen in love (with someone you shouldn't've)</td>
+      </tr>
+      <tr>
+        <th scope="row">(row 3)</th>
+        <td>1976</td>
+        <td>6</td>
+        <td>London Calling</td>
+      </tr>
+  
+      ... other paragraph complement
+  
+      <tr>
+        <th scope="row">(row 4)</th>
+        <td>1974</td>
+        <td>17</td>
+        <td>No More Heroes</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Número total de álbumes (row 5)</th>
+        <td colspan="2">77</td>
+      </tr>
+    </tfoot>
+  </table>
   
 </body>
 <style>
   :root {
     margin: 0%;
     padding: 0%;
-    width: 900px;
+    width: 60%;
     display: block;
     margin: 0 auto;
     background-color: rgb(183, 232, 255);
@@ -71,34 +142,120 @@
 
   /* unordered list */
   .ul-1{
-    list-style-position: outside;
     list-style-image: repeating-radial-gradient(red 40%,green 50%);
+    list-style-position: outside;
   }
   .ul-2{
-    list-style: outside;
     list-style-position: inside;
-  }.ul-3{
-    list-style: upper-roman;
-    list-style-position: inside;
-  }.ul-4{
-    list-style: outside;
   }
-/* ordered list */
-.ol-1{
-  list-style-position: inside;
-  list-style-image: repeating-radial-gradient(red 40%,green 50%);
+  /* ordered list */
+  .ol-3{
+    position: outside;
+  }
+  .ol-4{
+    list-style-position: inside;
+    list-style-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f34b.svg);
+  }
+  /* symbols */
+  .disc{
+    list-style: disc;
+  }
+  .circle{
+    list-style: circle;
+  }
+  .disclosure-open{
+    list-style: disclosure-open;
+  }
+  .disclosure-closed{
+    list-style: disclosure-closed;
+  }
+
+  /* TABLES */
+  table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
 }
-.ol-2{
-  list-style: armenian;
-  list-style-position: inherit;
+
+thead th:nth-child(1) {
+  width: 30%;
 }
-.ol-3{
-  list-style: lower-greek;
+
+thead th:nth-child(2) {
+  width: 20%;
 }
-.ol-4{
-  list-style-position: outside;
-  list-style-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f34b.svg);
+
+thead th:nth-child(3) {
+  width: 15%;
 }
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+} 
+thead,
+tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 242, 0, 0.1),
+    rgba(0, 255, 76, 0.5)
+  );
+  border: 3px solid rgb(16, 122, 113);
+} 
+
+tbody tr:nth-child(odd) {
+  background-color: #33a3ff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #95e4db;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #33c9ff;
+}
+
 </style>
 
 </html>
