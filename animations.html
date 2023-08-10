@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEARNING CSS: Animations</title>
+</head>
+
+<body>
+  <h1 class="title">LEARNING CSS: Animations</h1>
+
+  <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium aperiam laboriosam est tenetur
+    veritatis, distinctio eos quo inventore, perferendis dolorem voluptate esse nisi unde eveniet sapiente cumque!
+    Placeat, quis velit.</p>
+
+</body>
+<style>
+  :root {
+    margin: 0%;
+    padding: 0%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(183, 232, 255);
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .title {
+    background-color: rgba(183, 232, 255, 0.557);
+    z-index: 3;
+    position: sticky;
+    text-align: center;
+    top: 10px;
+  }
+
+  .text {
+    font-weight: bold;
+    border: solid 1px black;
+
+    /* how long the animation lasts */
+    animation-duration: 5s;
+
+    animation-name: first-animation;
+
+    /* repeat animation */
+    animation-iteration-count: 3;
+
+    /* direction movement */
+    animation-direction: alternate;
+
+  }
+  /* 
+   animation-duration: 3s;
+  animation-name: NAME;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  */
+
+  /*animation: 3s infinite alternate NAME; */
+
+
+  /* frame sequence */
+  @keyframes first-animation {
+
+    0% {
+      margin-left: 80%;
+      width: 300%;
+      word-spacing: 5px;
+      border: solid 2px rgb(122, 235, 47);
+
+      color: rgb(252, 22, 252);
+      font-weight: bold;
+    }
+
+    75% {
+      font-size: 300%;
+      border: solid 2px rgb(103, 54, 195);
+      margin-left: 25%;
+      width: 150%;
+      color: yellow;
+    }
+
+    100% {
+      margin-left: 0%;
+      border: none;
+      width: 100%;
+      font-weight: bold;
+      color: rgb(0, 99, 185);
+
+    }
+  }
+
+  /* from - to || 0% - 50% - 100% */
+</style>
+
+</html>
