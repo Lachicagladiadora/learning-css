@@ -14,6 +14,15 @@
     veritatis, distinctio eos quo inventore, perferendis dolorem voluptate esse nisi unde eveniet sapiente cumque!
     Placeat, quis velit.</p>
 
+  <section class="section">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores inventore eos in dicta dolore neque officia! Fugit nemo aut numquam dolorum tempore voluptate, repellendus, expedita nobis ducimus, magni aperiam impedit.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam rem incidunt voluptate, placeat ex nesciunt, temporibus sapiente repellendus autem molestiae laboriosam consequatur, quis consequuntur libero dolor obcaecati! Eum, iusto.
+  </section>
+
+  <div class="delay-animation">
+    span.
+  </div>
+
 </body>
 <style>
   :root {
@@ -92,6 +101,45 @@
   }
 
   /* from - to || 0% - 50% - 100% */
+
+
+  .section{
+    animation: section-animation 10 alternate  5s ;
+
+  }
+  @keyframes section-animation {
+    0%{
+      background-color: aqua;
+      color: brown;
+    }
+    25%{
+      background-color: rgb(28, 87, 155);
+      color: tomato;
+    }
+    50%{
+      background-color: slateblue;
+      color: salmon;
+    }
+    75%{
+      background-color: turquoise;
+      color: tomato;
+      transition: 5s;
+    }
+    100%{
+      background-color: rgb(21, 158, 0);
+      color: rgb(255, 20, 153);
+    }
+  }
+
+  /* animation-name: animation-1, animation02 ; */
+  /* animation-duration: 1s, 1s; */
+  /* animation-delay: 0s, 1s; -> retraso para el inicion de la animacion / delay for the start of the animation*/
+  /* animation-iteration-count: 1,1; -> numero de veces que se ejecuta la animacion */
+  /* animation-direction: alternate; */
+  /* animation-timing-function: ease-out, ease-in-out; */
+  /* animation-fill-mode: forwards; */
+  
+
 </style>
 
 </html>
