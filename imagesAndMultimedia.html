@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Images & Multimedia</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images & Multimedia</title>
+  </head>
+  <body>
+    <h1>object fit</h1>
+    <h3>cover</h3>
+    <div class="contain-cover">
+      <img
+        class="image-cover"
+        height="600"
+        width="100%"
+        src="https://images.pexels.com/photos/18036573/pexels-photo-18036573/free-photo-of-ligero-mar-ciudad-naturaleza.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+    <h3>fill</h3>
+    <div class="contain-fill">
+      <img
+        class="img-fit"
+        src="https://images.pexels.com/photos/10322825/pexels-photo-10322825.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+    <h3>contain</h3>
+    <div class="contain">
+      <img
+        class="image-contain"
+        src="https://images.pexels.com/photos/14573746/pexels-photo-14573746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+    <h3>scale-down</h3>
+    <div class="contain">
+      <img
+        class="scale-down"
+        src="https://images.pexels.com/photos/10376281/pexels-photo-10376281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
 
-  <div class="contain">
-    <img class="image-1" height="600" width="100%" src="https://images.pexels.com/photos/18036573/pexels-photo-18036573/free-photo-of-ligero-mar-ciudad-naturaleza.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-  </div>
+    <h1>object position</h1>
+    <div>
+      <img
+        class="object-position"
+        height="300"
+        width="300"
+        src="https://interactive-examples.mdn.mozilla.net/media/examples/hummingbird.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+  <style>
+    .contain {
+      height: 400px;
+      width: 400px;
+    }
 
-  <img class="image-2" height="300" width="300" src="https://interactive-examples.mdn.mozilla.net/media/examples/hummingbird.jpg" alt="">
-  <div>
-  </div>
-  
-</body>
-<style>
-  .image-1{
-    object-fit: cover;
-    border: solid 2px red;
-  }
-  
-  .image-2{
-    object-position: left bottom;
-    image-orientation: from-image;
-  }
-</style>
+    .contain-fill {
+      height: 400px;
+      width: 400px;
+    }
+
+    .image-cover {
+      object-fit: cover;
+      border: solid 2px red;
+    }
+
+    .img-fit {
+      height: 400px;
+      width: 400px;
+      object-fit: fill;
+    }
+
+    .image-contain {
+      height: 400px;
+      width: 400px;
+      object-fit: contain;
+    }
+
+    .scale-down {
+      height: 400px;
+      width: 400px;
+      object-fit: scale-down;
+    }
+
+    .object-position {
+      object-position: left bottom;
+      image-orientation: from-image;
+    }
+  </style>
 </html>
