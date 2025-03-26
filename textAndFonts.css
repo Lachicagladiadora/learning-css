@@ -1,0 +1,369 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+  background-color: rebeccapurple;
+  color: gainsboro;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.title {
+  background-color: rebeccapurple;
+  text-align: center;
+  z-index: 3;
+  position: sticky;
+  top: 10px;
+}
+
+/* color */
+.color-pink {
+  border: solid 2px saddlebrown;
+  font-weight: 600;
+  color: pink;
+}
+.color-pink strong {
+  background-color: black;
+}
+.color-peru {
+  border: solid 2px saddlebrown;
+  font-weight: 600;
+  color: peru;
+}
+.color-peru strong {
+  background-color: black;
+}
+.color-yellow {
+  border: solid 2px saddlebrown;
+  font-weight: 600;
+  color: yellow;
+}
+.color-yellow strong {
+  background-color: black;
+}
+.color-green {
+  border: solid 2px saddlebrown;
+  font-weight: 600;
+  color: green;
+}
+.color-green strong {
+  background-color: black;
+}
+/* font-family */
+.font-family-Courier-New {
+  border: solid 2px purple;
+  font-family: "Courier New", Courier, monospace;
+}
+.font-family-Franklin-Gothic {
+  border: solid 2px purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.font-family-Gill-Sans {
+  border: solid 2px purple;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.font-family-Lucida-Sans {
+  border: solid 2px purple;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.font-family-Segoe-UI {
+  border: solid 2px purple;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.font-family-Times-New {
+  border: solid 2px purple;
+  font-family: "Times New Roman", Times, serif;
+}
+.font-family-Trebuchet-MS {
+  border: solid 2px purple;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.font-family-Arial {
+  border: solid 2px purple;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.font-family-Cambria {
+  border: solid 2px purple;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.font-family-Georgia {
+  border: solid 2px purple;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.font-family-Impact {
+  border: solid 2px purple;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.font-family-Verdana {
+  border: solid 2px purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.font-family-cursive {
+  border: solid 2px purple;
+  font-family: cursive;
+}
+.font-family-fantasy {
+  border: solid 2px purple;
+  font-family: fantasy;
+}
+.font-family-monospace {
+  border: solid 2px purple;
+  font-family: monospace;
+}
+.font-family-sans-serif {
+  border: solid 2px purple;
+  font-family: sans-serif;
+}
+.font-family-serif {
+  border: solid 2px purple;
+  font-family: serif;
+}
+.font-family-system-ui {
+  border: solid 2px purple;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/* font-size */
+.font-size-large {
+  border: solid 2px violet;
+  font-size: large;
+}
+.font-size-larger {
+  border: solid 2px violet;
+  font-size: larger;
+}
+.font-size-medium {
+  border: solid 2px violet;
+  font-size: medium;
+}
+.font-size-small {
+  border: solid 2px violet;
+  font-size: small;
+}
+.font-size-smaller {
+  border: solid 2px violet;
+  font-size: smaller;
+}
+.font-size-x-large {
+  border: solid 2px violet;
+  font-size: x-large;
+}
+.font-size-x-small {
+  border: solid 2px violet;
+  font-size: x-small;
+}
+.font-size-xx-large {
+  border: solid 2px violet;
+  font-size: xx-large;
+}
+.font-size-xx-small {
+  border: solid 2px violet;
+  font-size: xx-small;
+}
+/* font-style */
+.font-style-italic {
+  border: solid 2px indigo;
+  font-style: italic;
+}
+.font-style-normal {
+  border: solid 2px indigo;
+  font-style: normal;
+}
+.font-style-oblique {
+  border: solid 2px indigo;
+  font-style: oblique;
+}
+.font-weight-bold {
+  border: solid 2px rgb(239, 220, 11);
+  font-weight: bold;
+}
+.font-weight-bold strong {
+  background-color: cadetblue;
+  padding: 4px;
+}
+.font-weight-bolder {
+  border: solid 2px rgb(239, 220, 11);
+  font-weight: bolder;
+}
+.font-weight-bolder strong {
+  background-color: cadetblue;
+  padding: 4px;
+}
+.font-weight-lighter {
+  border: solid 2px rgb(239, 220, 11);
+  font-weight: lighter;
+}
+.font-weight-lighter strong {
+  background-color: cadetblue;
+  padding: 4px;
+}
+.font-weight-normal {
+  border: solid 2px rgb(239, 220, 11);
+  font-weight: normal;
+}
+.font-weight-normal strong {
+  background-color: cadetblue;
+  padding: 4px;
+}
+/* font transform */
+.text-transform-capitalize {
+  border: solid 2px seagreen;
+  text-transform: capitalize;
+}
+.text-transform-lowercase {
+  border: solid 2px seagreen;
+  text-transform: lowercase;
+}
+.text-transform-none {
+  border: solid 2px seagreen;
+  text-transform: none;
+}
+.text-transform-uppercase {
+  border: solid 2px seagreen;
+  text-transform: uppercase;
+}
+/* text-decoration */
+.text-decoration-line-through {
+  border: solid 2px yellowgreen;
+  text-decoration: line-through;
+}
+.text-decoration-none {
+  border: solid 2px yellowgreen;
+  text-decoration: none;
+}
+.text-decoration-overline {
+  border: solid 2px yellowgreen;
+  text-decoration: overline;
+}
+.text-decoration-underline {
+  border: solid 2px yellowgreen;
+  text-decoration: underline;
+}
+/* text-shadow */
+.text-shadow-solid {
+  text-shadow: 50px 5px 0 orange;
+}
+.text-shadow-blurred {
+  text-shadow: 50px 5px 5px palevioletred;
+}
+.text-shadow-negative {
+  text-shadow: -5px -5px 1px rgb(255, 255, 0);
+}
+/* text aling */
+.text-align-center {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: center;
+}
+.text-align-end {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: end;
+}
+.text-align-justify {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: justify;
+}
+.text-align-left {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: left;
+}
+.text-align-right {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: right;
+}
+.text-align-start {
+  border: solid 2px mediumpurple;
+  height: 50px;
+  text-align: start;
+}
+/* writing-mode */
+.horizontal-tb {
+  writing-mode: horizontal-tb;
+}
+.vertical-rl {
+  writing-mode: vertical-rl;
+}
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+.sideways-lr {
+  writing-mode: sideways-lr;
+}
+.sideways-rl {
+  writing-mode: sideways-rl;
+}
+/* line-height */
+.line-height {
+  color: orangered;
+}
+.paragraph-0px {
+  border: solid 2px mediumblue;
+  color: rgb(239, 220, 11);
+  line-height: 0px;
+}
+.paragraph-5px {
+  border: solid 2px mediumblue;
+  color: rgb(239, 220, 11);
+  line-height: 5px;
+}
+.paragraph-20px {
+  border: solid 2px mediumblue;
+  color: rgb(239, 220, 11);
+  line-height: 20px;
+}
+.paragraph-40px {
+  border: solid 2px mediumblue;
+  color: rgb(239, 220, 11);
+  line-height: 40px;
+}
+/* letter-spacing */
+.letter-spacing-0px {
+  border: solid 2px crimson;
+  letter-spacing: 0px;
+}
+.letter-spacing-5px {
+  border: solid 2px crimson;
+  letter-spacing: 5px;
+}
+.letter-spacing-20px {
+  border: solid 2px crimson;
+  letter-spacing: 20px;
+}
+.letter-spacing-40px {
+  border: solid 2px crimson;
+  letter-spacing: 40px;
+}
+/* word-spacing */
+.word-spacing-0px {
+  border: solid 3px sandybrown;
+  word-spacing: 0px;
+}
+.word-spacing-5px {
+  border: solid 3px sandybrown;
+  word-spacing: 5px;
+}
+.word-spacing-20px {
+  border: solid 3px sandybrown;
+  word-spacing: 20px;
+}
+.word-spacing-40px {
+  border: solid 3px sandybrown;
+  word-spacing: 40px;
+}
+/* font-variant */
+.font-variant-small-caps {
+  border: solid 2px rgb(118, 85, 25);
+  font-variant: small-caps;
+}
+/* font-variant-caps */
+.font-variant-caps {
+  border: solid 2px slateblue;
+  font-variant-caps: all-small-caps;
+  hyphens: manual;
+}
