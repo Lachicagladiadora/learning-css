@@ -1,0 +1,68 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(183, 232, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.title {
+  background-color: rgba(183, 232, 255, 0.557);
+  z-index: 3;
+  position: sticky;
+  top: 10px;
+}
+
+.positioning-relative {
+  border: solid 3px burlywood;
+  background-color: cadetblue;
+  padding-top: 50px;
+  padding-right: 200px;
+  max-width: 780px;
+  z-index: 1;
+  position: relative;
+  top: -50px;
+  left: 350px;
+}
+.position-static {
+  border: solid 3px chocolate;
+  background-color: rgba(249, 249, 96, 0.597);
+  color: blue;
+  width: fit-content;
+  position: static;
+  /* top: 0%; */
+}
+.position-absolute {
+  border: solid 3px darkorchid;
+  background-color: rgba(242, 189, 255, 0.561);
+  width: fit-content;
+  padding: 15px;
+  position: absolute;
+  bottom: 71%;
+  left: 5%;
+}
+.position-fixed {
+  border: solid 3px orange;
+  background-color: rgba(254, 178, 37, 0.581);
+  color: orangered;
+  padding: 15px;
+  position: fixed;
+}
+
+.contain {
+  max-width: 400px;
+  border: solid 3px skyblue;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+.position-sticky {
+  border: solid 3px magenta;
+  color: rgb(146, 0, 146);
+  background-color: rgba(238, 130, 238, 0.485);
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  position: sticky;
+  top: 50px;
+}
