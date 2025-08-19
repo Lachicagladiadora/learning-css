@@ -1,0 +1,133 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(183, 232, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.title {
+  background-color: rgba(183, 232, 255, 0.557);
+  z-index: 3;
+  position: sticky;
+  text-align: center;
+  top: 10px;
+}
+
+/* unordered list */
+.ul-1 {
+  list-style-image: repeating-radial-gradient(red 40%, green 50%);
+  list-style-position: outside;
+}
+.ul-2 {
+  list-style-position: inside;
+}
+/* ordered list */
+.ol-3 {
+  position: outside;
+}
+.ol-4 {
+  list-style-position: inside;
+  list-style-image: url(https://images.emojiterra.com/google/noto-emoji/unicode-15/color/svg/1f34b.svg);
+}
+/* symbols */
+.disc {
+  list-style: disc;
+}
+.circle {
+  list-style: circle;
+}
+.disclosure-open {
+  list-style: disclosure-open;
+}
+.disclosure-closed {
+  list-style: disclosure-closed;
+}
+
+/* TABLES */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid purple;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th,
+td {
+  padding: 20px;
+}
+html {
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tfoot th {
+  text-align: right;
+}
+thead,
+tfoot {
+  background: url(leopardskin.jpg);
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 242, 0, 0.1),
+    rgba(0, 255, 76, 0.5)
+  );
+  border: 3px solid rgb(16, 122, 113);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #33a3ff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #95e4db;
+}
+
+tbody tr {
+  background-image: url(noise.png);
+}
+
+table {
+  background-color: #33c9ff;
+}
