@@ -1,0 +1,122 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  background-color: rgb(157, 224, 255);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.block-definition {
+  border: solid 2px rgb(19, 65, 139);
+}
+.block-default {
+  border: solid 3px salmon;
+}
+.block {
+  border: solid 3px olivedrab;
+}
+.block-display-inline {
+  border: solid 3px sandybrown;
+}
+.block-inline {
+  border: solid 3px olive;
+  display: inline;
+}
+.block-display-flex {
+  border: solid 3px rgb(222, 109, 96);
+  display: flex;
+}
+.block-flex {
+  border: solid 3px rgb(149, 177, 23);
+}
+
+.inline-definition {
+  border: solid 2px rgb(115, 90, 205);
+}
+.inline-default {
+  border: solid 3px goldenrod;
+}
+.inline {
+  border: solid 3px greenyellow;
+}
+.inline-display-block {
+  border: solid 3px gold;
+}
+.inline-block {
+  border: solid 3px green;
+  display: block;
+}
+.inline-display-flex {
+  border: solid 3px yellow;
+  display: flex;
+  flex-direction: column;
+}
+.inline-flex {
+  border: solid 3px yellowgreen;
+}
+
+.margin {
+  border: solid 3px pink;
+  margin: 10px 20px 30px 40px;
+}
+.padding {
+  border: solid 3px plum;
+  margin: 10px 20px 30px 40px;
+  padding: 50px;
+}
+
+.border-contain {
+  padding: 15px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: violet;
+  border-top-style: dashed;
+  border-right-style: dotted;
+  border-bottom-style: double;
+  border-left-style: groove;
+}
+.border-block {
+  border: solid 10px purple;
+  padding: 20px;
+  margin: 10px;
+  border-top-style: hidden;
+  border-right-style: inherit;
+  border-bottom-style: initial;
+  border-left-style: inset;
+}
+.span-inline-border {
+  border: solid 10px mediumpurple;
+  padding: 10px;
+  margin: 10px;
+  border-top-style: none;
+  border-right-style: outset;
+  border-bottom-style: ridge;
+  border-left-style: unset;
+}
+.em-inline-border {
+  border: solid 10px mediumslateblue;
+  padding: 10px;
+  margin: 10px;
+}
+
+.display-inline-block-contain {
+  border: solid 4px rgb(255, 76, 255);
+}
+.box-content {
+  border: solid 3px rgb(203, 62, 117);
+  padding: 5px;
+  display: inline-block;
+}
+
+.nav-contain {
+  border: solid 3px blue;
+}
+.list {
+  border: solid 3px rgb(0, 143, 134);
+}
+.link-item {
+  border: solid 3px chocolate;
+  display: inline-block;
+}
+.link {
+  border: solid 4px darkkhaki;
+}
