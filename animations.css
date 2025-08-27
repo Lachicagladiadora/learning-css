@@ -1,0 +1,107 @@
+:root {
+  margin: 0%;
+  padding: 0%;
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(183, 232, 255);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.title {
+  background-color: rgba(183, 232, 255, 0.557);
+  z-index: 3;
+  position: sticky;
+  text-align: center;
+  top: 10px;
+}
+
+.text {
+  font-weight: bold;
+  border: solid 1px black;
+
+  /* how long the animation lasts */
+  animation-duration: 5s;
+
+  animation-name: first-animation;
+
+  /* repeat animation */
+  animation-iteration-count: 3;
+
+  /* direction movement */
+  animation-direction: alternate;
+}
+/* 
+ animation-duration: 3s;
+animation-name: NAME;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+*/
+
+/*animation: 3s infinite alternate NAME; */
+
+/* frame sequence */
+@keyframes first-animation {
+  0% {
+    margin-left: 80%;
+    width: 300%;
+    word-spacing: 5px;
+    border: solid 2px rgb(122, 235, 47);
+
+    color: rgb(252, 22, 252);
+    font-weight: bold;
+  }
+
+  75% {
+    font-size: 300%;
+    border: solid 2px rgb(103, 54, 195);
+    margin-left: 25%;
+    width: 150%;
+    color: yellow;
+  }
+
+  100% {
+    margin-left: 0%;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(0, 99, 185);
+  }
+}
+
+/* from - to || 0% - 50% - 100% */
+
+.section {
+  animation: section-animation 10 alternate 5s;
+}
+@keyframes section-animation {
+  0% {
+    background-color: aqua;
+    color: brown;
+  }
+  25% {
+    background-color: rgb(28, 87, 155);
+    color: tomato;
+  }
+  50% {
+    background-color: slateblue;
+    color: salmon;
+  }
+  75% {
+    background-color: turquoise;
+    color: tomato;
+    transition: 5s;
+  }
+  100% {
+    background-color: rgb(21, 158, 0);
+    color: rgb(255, 20, 153);
+  }
+}
+
+/* animation-name: animation-1, animation02 ; */
+/* animation-duration: 1s, 1s; */
+/* animation-delay: 0s, 1s; -> retraso para el inicion de la animacion / delay for the start of the animation*/
+/* animation-iteration-count: 1,1; -> numero de veces que se ejecuta la animacion */
+/* animation-direction: alternate; */
+/* animation-timing-function: ease-out, ease-in-out; */
+/* animation-fill-mode: forwards; */
